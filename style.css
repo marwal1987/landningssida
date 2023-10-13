@@ -10,14 +10,14 @@ body {
 }
 
 .chas-logo {
-  width: 10%;
+  max-width: 150px;
   padding: 30px;
 }
 
 .top {
   background-image: url(./images/bg.webp);
   background-size: cover;
-  width: 100%;
+  max-width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -55,23 +55,27 @@ nav a {
 }
 
 .cta-button {
-  border-radius: 15px;
-  background-color: #00abe4;
+  border: none;
+  border-radius: 30px;
+  background-color: #5a2fcf;
   color: #f8f8f8;
-  width: 100px;
-  padding: 10px;
+  padding: 10px 30px;
+  text-transform: uppercase;
+  font-size: medium;
+  font-weight: 700;
+  font-family: "Roboto Condensed", sans-serif;
 }
 
 .about {
   display: flex;
-  justify-content: center;
-  padding-top: 40px;
+  justify-content: space-around;
+  align-items: center;
+  padding: 50px 0px;
   background-image: radial-gradient(ellipse, #e9f1fa, #c5e3ed);
-  padding-bottom: 40px;
 }
 
 .img-gaze {
-  width: 70%;
+  max-width: 50%;
   border-radius: 20px;
 }
 
@@ -80,7 +84,7 @@ nav a {
   flex-direction: column;
   justify-content: center;
   align-items: start;
-  width: 30%;
+  max-width: 30%;
 }
 
 .review {
@@ -155,4 +159,19 @@ h2 {
 
 h3 {
   font-size: 2rem;
+}
+
+@media (max-width: 768px) {
+  .about {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    max-width: 30%;
+  }
 }
